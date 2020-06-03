@@ -8,7 +8,7 @@ const MissionsList = props => {
       ) : (
         <div>
           {props.missions.map(mission => (
-            <div className="mission" key={mission.mission_id}>
+            <div data-testid="mission" className="mission" key={mission.mission_id}>
               {mission.mission_name}
             </div>
           ))}

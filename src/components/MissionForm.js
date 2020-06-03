@@ -11,7 +11,7 @@ const MissionForm = props => {
       {props.isFetchingData ? (
         <div>we are fetching data</div>
       ) : (
-        <button onClick={handleGetData}>Get Data</button>
+        <button data-testid="button" onClick={handleGetData}>Get Data</button>
       )}
     </>
   );
